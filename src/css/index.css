@@ -1,0 +1,78 @@
+body{
+    position: relative;
+}
+.navbar-header a{
+    font-weight: bold;
+}
+.jumbotron{
+    padding: 90px 0 110px;
+    background: linear-gradient(45deg,#020031 0,#6d3353 100%);
+    margin-bottom: 0;
+}
+.jumbotron::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../bs-docs-masthead-pattern.png') repeat center center;
+}
+.jumbotron .container{
+    text-align: center;
+    color: #ffffff;
+}
+
+.jumbotron .container h1{
+    font-size: 100px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.jumbotron .container p:nth-of-type(1){
+    font-size: 30px;
+}
+@media screen and (max-width: 600px){
+    .jumbotron .container h1{
+        font-size: 60px;
+    }
+    .jumbotron .container p:nth-of-type(1){
+        font-size: 24px;
+    }
+}
+.jumbotron .container > a{
+    color: #cccccc;
+}
+.ask{
+    background-color: rgb(245, 245, 245);
+    padding: 15px 0;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 22px;
+}
+.ask ul,
+.ask li{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    list-style: none;
+}
+.ask ul li{
+    height: 22px;
+}
+.ask ul li a{
+    color: #222222;
+}
+.container.project div.page-header{
+    text-align: center;
+}
+.container.project div.page-header h2{
+    font-size: 42px;
+}
+@media screen and  (max-width: 600px){
+    .container.project div.page-header h2{
+        font-size: 28px;
+    }
+}
